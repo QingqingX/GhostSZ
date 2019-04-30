@@ -1,2 +1,2 @@
-# GhostSZ_AWS
-GhostSZ lossy compression for AWS platform
+# GhostSZ
+GhostSZ lossy compression for Xilinx platform
