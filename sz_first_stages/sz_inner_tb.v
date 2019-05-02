@@ -8,6 +8,7 @@ reg enable;
 wire [1:0] data_out;
 wire [31:0] phase3_data_out;
 wire [15:0] phase2_data_out; // quant is 14 bits
+wire data_out_valid;
 wire phase2_valid;
 wire phase3_valid;
 
@@ -17,6 +18,7 @@ sz_inner sz0(
     data_in,
     enable,
     data_out,
+    data_out_valid,
     phase2_data_out,
     phase2_valid,
     phase3_data_out,
@@ -38,7 +40,7 @@ initial begin
   //  $display("data_file handle was NULL");
   //  $finish;
   //end
-  
+
   clk=0;
   rst=1;
   enable='b0;
